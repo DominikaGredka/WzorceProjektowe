@@ -18,8 +18,8 @@ public class LibrarySystemDemo {
         System.out.println("Are catalog1 and catalog2 the same instance? " + (catalog1.equals(catalog2)));
 
         System.out.println("\n=== Adapter ===");
-        FileManager csvFileManager = new CsvFileManager();   // CSV adapter
-        catalog1 = csvFileManager.importData(); // Import z CSV
+        FileManager csvFileManager = new CsvFileManager();  
+        catalog1 = csvFileManager.importData();
         System.out.println("Books imported from CSV: " + catalog1.getBooks());
 
         System.out.println("\n=== Factory ===");
